@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'    # Use Adoptium Temurin JDK
-          java-version: '11'         # Set Java version to 17
+          java-version: '11'         # Set Java version to 11
 
       - name: Build with Maven
         run: ./mvnw clean install    # Build the project using Maven (./mvnw is for the wrapper)
