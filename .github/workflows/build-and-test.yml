@@ -23,7 +23,7 @@ jobs:
           java-version: '11'         # Set Java version to 11
 
       - name: Build with Maven
-        run: ./mvnw clean install    # Build the project using Maven (./mvnw is for the wrapper)
+        run: mvn clean install    # Build the project using Maven (./mvnw is for the wrapper)
 
       - name: Run tests
-        run: ./mvnw test            # Run the JUnit tests
+        run: mvn test            # Run the JUnit tests
